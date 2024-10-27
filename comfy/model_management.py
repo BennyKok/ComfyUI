@@ -269,10 +269,10 @@ def get_torch_device_name(device):
     else:
         return "CUDA {}: {}".format(device, torch.cuda.get_device_name(device))
 
-try:
-    logging.info("Device: {}".format(get_torch_device_name(get_torch_device())))
-except:
-    logging.warning("Could not pick default device.")
+# try:
+#     logging.info("Device: {}".format(get_torch_device_name(get_torch_device())))
+# except:
+#     logging.warning("Could not pick default device.")
 
 
 current_loaded_models = []
